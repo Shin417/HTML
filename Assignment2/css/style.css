@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+p,a,li,figcaption{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+/** positioning header, mast, main, aside and footer using grid **/
+body{
+    display: grid;
+    grid-template-columns: 25%,25%,25%,25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "mast mast mast mast"
+        "main main main aside"
+        "footer footer footer footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+header > div{
+    flex-grow: 1;
+    height: 240px;
+    width: auto;
+}
+
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav > menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+header > nav > menu > li{
+    float: left;
+    padding: 0px 10px;
+}
+
+header > nav > menu > li > a{color: #0e0e0e;}
+/** masthead **/
+.masthead{
+    grid-area: mast;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-image: url(../img/mastBack.jpeg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.masthead h1{
+    color: #e8e8e8;
+    font-size: 70px;
+    margin-right: 70px;
+}
+
+main{
+    grid-area: main;
+}
+/** Positioning div and form using flex **/
+main > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section > div{
+    padding: 15px;
+}
+
+main > section > div > img{
+    width: 100%;
+    height: auto;
+}
+
+main > section > form{
+    width: 100%;
+    height: auto;
+    color: #0e0e0e;
+}
+/** making two rows 1 column grid **/
+aside{
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #e8e8e8;
+}
+
+aside > article{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+aside > article > img{
+    width: 100%;
+    height: auto;
+}
+
+aside > article > h4{
+    color: #0e0e0e;
+}
+/**  **/
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+}
+
+footer > div{
+   padding: 15px;
+}
+
+footer > div > a > img{
+    width: 100%;
+    height: auto;
+}
+
+footer > div + div{
+    width: 100%;
+    height: auto;
+}
+
+footer > div + div > form{
+    width: 90%;
+    height: auto;
+}
+
+footer > div + div + div{
+    width: 90%;
+    height: auto;
+}
+footer > div + div + div > p{
+    font-size: 15px;
+}
