@@ -1,0 +1,215 @@
+/*font*/
+@font-face {
+    font-family: film;
+    src: url(../font/Tall\ Film\ Fine.ttf);
+}
+
+/*set background color*/
+body{
+    background-color: black;
+}
+
+/*set main flex box, column direction*/
+body > main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/*first row text*/
+body > main > h1{
+    position: absolute;
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1110px;
+    font-size: 50px;
+}
+
+/*set second row div as flex box, row direction*/
+body > main > .todd{
+    position: absolute;
+    display: flex;
+    height: 50px;
+    align-items: baseline;
+    margin-top: 1140px;
+    font-family: film;
+}
+
+/*make "A" smaller*/
+body > main > .todd > .a{
+    font-size: 35px;
+    height: 100%;
+    color: gray;
+}
+
+body > main > .todd > .toddPhillips{
+    height: 100%;
+    font-size: 45px;
+    color: grey;
+}
+
+/*make "FILM" smaller*/
+body > main > .todd > .film{
+    height: 100%;
+    font-size: 35px;
+    color: gray;
+}
+
+/*set title*/
+body > main > a {
+    position: absolute;
+    height: 200px;
+    margin-top: 1220px;
+}
+
+/*set title*/
+body > main > a > .joker{
+    height: 100%;
+}
+
+/*set fourth row*/
+body > main > h3{
+    position: absolute;
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1415px;
+    font-size: 40px;
+}
+
+/*set credit block as flex box, row direction*/
+body > main > .credits{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    height: 40px;
+    margin-top: 1472px;
+    column-gap: 3px;
+    font-family: film;
+}
+
+/*set image*/
+body > main > .credits > .village{
+    height: 50%;
+}
+
+/*set image*/
+body > main > .credits > .dc{
+    height: 50%;
+}
+
+/*set image*/
+body > main > .credits > .bron{
+    height: 50%;
+}
+
+/*set "BASED ON" as flex box, column direction*/
+body > main > .credits > .basedOn{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+/*set "BASED" ON text*/
+body > main > .credits > .basedOn > h4{
+    color: grey;
+    margin: 0px;
+}
+
+body > main > .credits > .DC{
+    height: 100%;
+    color: grey;
+    margin: 0;
+}
+
+/*set "WRITTEN BY" as flex box, column direction*/
+body > main > .credits > .writtenBy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+/*set "WRITTEN BY" text*/
+body > main > .credits > .writtenBy > h4{
+    margin: 0;
+    height: 100%;
+    color: grey;
+}
+
+/*set names text*/
+body > main > .credits > h4{
+    color: grey;
+    margin: 0;
+    height: 100%;
+    font-size: 50px;
+}
+
+/*make "&" smaller*/
+body > main > .credits > .and{
+    height: 60%;
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+/*set "DIRECTED BY" as flex box, column direction*/
+body > main > .credits > .directedBy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/*set "DIRECTED BY" text*/
+body > main > .credits > .directedBy > h4{
+    margin: 0;
+    height: 100%;
+    color: grey;
+}
+
+
+body > main > .credits > .watertower{
+    height: 20px;
+}
+
+body > main > .credits > .warner{
+    height: 20px;
+}
+
+/*set last line as flex box, row direction*/
+body > main > .experience{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 1520px;
+    gap: 3px;
+}
+
+
+body > main > .experience > h4{
+    color: grey;
+}
+
+body > main > .experience > .imax{
+    height: 50px;
+}
+
+body > main > .experience > .dolby{
+    height: 50px;
+}
