@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+
+#header{
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    background-color: #125784;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'logo menu search'
+    ;
+}
+
+.logo-for-header{
+    grid-area: logo;
+    height: 150px;
+    display: flex;
+}
+
+.logo-for-header img{
+    height: 90%;
+    margin-left: 10px;
+}
+
+.menu{
+    grid-area: menu;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav menu{
+    display: flex;
+}
+
+.menu nav menu li{
+    border-right: solid;
+    list-style-type: none;
+}
+
+.menu nav menu li:nth-child(3){
+    border: none;
+}
+
+.menu nav menu li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fefefe;
+}
+
+.search{
+    grid-area: search;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mastheader{
+    margin: 0;
+    background-image: url(../resources/img1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mast h1{
+    font-size: 40px;
+    color: #fefefe;
+}
+
+.text-and-img{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-areas:
+        'text img'
+    ;
+    background-color: #f57f17;
+}
+
+.text{
+    grid-area: text;
+    padding: 10px;
+    height: 250px;
+}
+
+.text h2, p{
+    color: #fefefe;
+}
+
+.img2{
+    grid-area: img;
+    width: 100%;
+    height: 250px;
+}
+
+.img2 img{
+    height: 100%;
+}
+
+main > section + section{
+    display: flex;
+    width: 100%;
+}
+
+main > section + section div{
+    margin: 0;
+}
+
+.form{
+    height: 400px;
+    background-color: #5e35b1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cusInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
