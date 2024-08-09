@@ -1,0 +1,406 @@
+h1, h2, p, li, a, label{
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.HomeBody{
+    background-color: #15202B;
+    width: 100%;
+}
+
+#header{
+    background-color: #18191A;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.menu--right{display: none;}
+
+#header > .desktop-menu > menu{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#header > div{
+    flex-grow: 1;
+    width: auto;
+    height: 80%;
+}
+
+#header > div > a > img{
+    height: 100%;
+}
+
+#header > .desktop-menu > menu >li{
+    padding: 0px 10px;
+}
+
+#header > .desktop-menu > menu > li > a{
+    font-size: 40px;
+    color: coral;
+}
+
+/**mast header**/
+.mastheader{
+    width: 100%;
+    background-image: url(../img/mastheader4.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mastheader > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mastheader > div > h1{
+    font-size: 100px;
+    color: coral;
+}
+
+/**footer**/
+#footer{
+    background-color: #3a3b3c;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer > .logo{
+    height: 80%;
+}
+
+#footer > .logo > a > img{
+    height: 100%;
+}
+
+#footer > .Address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+#footer > .Address > p{
+    font-size: 25px;
+    color: coral;
+}
+
+
+/**Home main**/
+.HomeBody > main{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeBody > main > div{
+    border-style: solid;
+    border-width: 5px;
+    border-color: coral;
+    height: 150px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeBody > main > div > a{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeBody > main > div > a > h2{
+    font-size: 70px;
+    color: coral;
+}
+
+/**Shop page**/
+.ShopBody{
+    background-color: #15202B;
+    width: 100%;
+}
+
+.ShopBody > main {
+    margin-left: 50px;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title > a > h1{
+    font-size: 60px;text-align: center;
+    color: coral;
+}
+
+.title > p{
+    font-size: 40px;
+    color: coral;
+}
+
+
+/**product page**/
+.body{
+    background-color: #15202B;
+    padding: 0;
+    margin: 0;
+}
+
+.body > main > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/**Product info**/
+.info{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+/**title**/
+.info > h1{
+    font-size: 50px;
+    color: coral;
+}
+
+/**price and count form**/
+.info > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/**price p**/
+.info > div > p{
+    font-size: 50px;
+    color: coral;
+}
+
+/**count form**/
+.info> div > form{
+    margin-left: 30px;
+}
+
+.info > div > form > select{
+    height: 40px;
+}
+
+.info > div > form > input{
+    height: 40px;
+}
+
+/**description**/
+.description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.description > p{
+    font-size: 25px;
+    color: coral;
+}
+
+/**img**/
+.body > main > div + div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    width: 90%;
+}
+
+
+/**video section**/
+.body > main > section{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/**about page**/
+.aboutBody{
+    background-color: #15202B;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutBody > main{
+    margin-left: 50px;
+}
+
+.about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about > h1{
+    font-size: 60px;
+    margin-left: 30px;
+    color: coral;
+}
+
+.about > p{
+    font-size: 30px;
+    color: coral;
+}
+
+.ceo{
+    display: flex;
+    align-items: center;
+}
+
+.ceo > div + div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ceo > div + div > h1{
+    font-size: 40px;
+    color: coral;
+}
+
+.ceo > div + div > p{
+    font-size: 25px;
+    color: coral;
+}
+
+/**Contact page**/
+.contactBody{
+    background-color: #15202B;
+}
+
+.contactBody > main{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.contactBody > main > h1{
+    font-size: 70px;
+    color: coral;
+}
+
+.contactBody > main > div{
+    width: 60%;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contactForm > textarea{
+    font-size: 25px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid coral;
+    border-radius: 5px;
+}
+
+.contactForm > textarea::placeholder{
+    font-size: 25px;
+}
+
+.contactForm > label {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color:  coral;
+}
+
+.contactForm > div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.first {
+    font-size: 40px;
+    color: coral;
+}
+
+.last{
+    font-size: 40px;
+    margin-left: 40px;
+    color: coral;
+}
+
+#first {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#last{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+/*mobile version*/
+@media screen and (max-width: 1024px){
+
+    
+    /*modify product page for mobile*/
+    .body > main > div{
+        display: grid;
+        grid-template-areas: 
+            'img info'
+            'desc desc'
+        ;
+    }
+
+    .product-img{
+        grid-area: img;
+    }
+
+    .info{
+        grid-area: info;
+    }
+
+    .description{
+        grid-area: desc;
+        width: 100%;
+    }
+
+    .body > main > div + div{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}
